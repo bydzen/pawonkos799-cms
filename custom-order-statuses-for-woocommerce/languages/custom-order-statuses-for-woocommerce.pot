@@ -1,0 +1,160 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Custom Order Statuses for WooCommerce\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-05 07:21+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.2; wp-6.0\n"
+"X-Domain: custom-order-statuses-for-woocommerce"
+
+#: ajax/remove-woocos-item.php:50
+#, php-format
+msgid "\"%1s\" status has been removed"
+msgstr ""
+
+#: ajax/update-woocos-item.php:25
+#, php-format
+msgid "\"%1s\" status updated successfully."
+msgstr ""
+
+#: emails/woocos-email.php:27
+msgid "[{site_title}] Order {order_number} - {order_date}"
+msgstr ""
+
+#: settings-page.php:58
+msgid "Add New Custom Order Status"
+msgstr ""
+
+#: settings-page.php:51 settings-page.php:193
+msgid "Add Order status to \"Bulk Actions\" in Orders page"
+msgstr ""
+
+#: settings-page.php:48
+msgid "Add to \"Bulk Actions\""
+msgstr ""
+
+#: settings-page.php:183
+msgid "Add to Bulk Actions"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Allows to create Custom Order Statuses for WooCommerce and send Custom "
+"Emails for them."
+msgstr ""
+
+#: emails/woocos-email.php:229 emails/woocos-email.php:238
+#, php-format
+msgid "Available placeholders: %1s, %2s, %3s, %4s, %5s"
+msgstr ""
+
+#: order-status-generator.php:43
+msgid "Change status to "
+msgstr ""
+
+#: settings-page.php:32
+msgid "Create New Status"
+msgstr ""
+
+#: settings-page.php:26
+msgid "Created Statuses"
+msgstr ""
+
+#: settings-page.php:11 settings-page.php:21
+msgid "Custom Order Statuses"
+msgstr ""
+
+#. Name of the plugin
+msgid "Custom Order Statuses for WooCommerce"
+msgstr ""
+
+#: functions.php:21
+msgid "Donate"
+msgstr ""
+
+#: settings-page.php:165 ajax/expand-woocos-item.php:24
+msgid "Expand"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://nuggethon.com"
+msgstr ""
+
+#: ajax/remove-woocos-item.php:34
+#, php-format
+msgid ""
+"Impossible to remove\"%1s\" status, orders %2s are using this status. Please "
+"change them before removing."
+msgstr ""
+
+#: settings-page.php:165 ajax/expand-woocos-item.php:22
+msgid "Minimize"
+msgstr ""
+
+#: settings-page.php:145
+msgid "No statuses to display"
+msgstr ""
+
+#. Author of the plugin
+msgid "Nuggethon"
+msgstr ""
+
+#: emails/woocos-email.php:26
+msgid "Order status for order {order_number} has been changed."
+msgstr ""
+
+#: settings-page.php:39 settings-page.php:177
+msgid "Order Status Slug"
+msgstr ""
+
+#: settings-page.php:35 settings-page.php:173
+msgid "Order Status Title"
+msgstr ""
+
+#: settings-page.php:166
+msgid "Remove"
+msgstr ""
+
+#: functions.php:9
+msgid "Settings"
+msgstr ""
+
+#: settings-page.php:89
+#, php-format
+msgid ""
+"Slug \"%1s\" already exists. Please change the slug to create new Status."
+msgstr ""
+
+#: settings-page.php:43
+msgid "Slug cannot exceed 17 characters"
+msgstr ""
+
+#: emails/woocos-email.php:246
+#, php-format
+msgid ""
+"Text to appear below the main email content. Available placeholders: %1s, "
+"%2s, %3s, %4s, %5s"
+msgstr ""
+
+#: emails/woocos-email.php:24
+#, php-format
+msgid "This email is received when an order status is changed to \"%1s\"."
+msgstr ""
+
+#: settings-page.php:209
+msgid "Update"
+msgstr ""
+
+#: settings-page.php:201
+#, php-format
+msgid "You can edit email template %1s here%2s."
+msgstr ""

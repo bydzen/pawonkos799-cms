@@ -1,0 +1,65 @@
+.woocos-deactivation-popup{
+    position:fixed;
+    width:100vw;
+    height:100vh;
+    z-index:100000;
+    left:0;
+    top:0;
+
+}
+.woocos-deactivation-popup .form-header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.woocos-deactivation-popup .form-header .col-10{
+    width: 83.33%;
+}
+.woocos-deactivation-popup .form-header .col-2{
+    width: 16.67%;
+    display:flex;
+    align-items:center;
+    justify-content:right;
+}
+.close-woocos-popup{
+    width:20px;
+    height:20px;
+    transition:0.3s;
+}
+.close-woocos-popup:hover{
+    cursor:pointer;
+    opacity:0.6
+}
+.close-woocos-popup svg{
+    width:20px;
+    height:20px;
+}
+.woocos-deactivation-popup.hidden{
+    display:none;
+}
+
+.woocos-deactivation-popup .overlay{
+    background-color:rgba(0,0,0, 0.3);
+    width:100%;
+    height:100vh;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:1;
+}
+.woocos-deactivation-popup .form{
+    display:inline-block;
+    background-color:#ffffff;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    padding:24px;
+    z-index:99999;
+}
+.woocos-deactivation-popup .form .form-footer{
+    margin-top:24px;
+}
+.woocos-deactivation-popup .more-orders.hidden{
+    display:none;
+}

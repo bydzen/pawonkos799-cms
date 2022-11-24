@@ -1,0 +1,68 @@
+#wpcontent{
+    padding-left:0!important;
+}
+.woocos-settings{
+    padding-left:20px;
+}
+.woocos-header{
+    background-color:#ffffff;
+    display:inline-block;
+    width:calc(100% );
+    box-sizing:border-box;
+    
+}
+.woocos-header-wrapper{
+    
+    padding-left:40px;
+    padding-top:12px;
+    padding-bottom:12px;
+}
+.woocos-header h1{
+    font-size:14px;
+
+}
+.woocos-status-item{
+    background-color:#ffffff;
+    padding:12px;
+    width:80%;
+    margin-bottom:12px;
+    box-shadow:0 1px 1px 1px lightgrey;
+}
+.woocos-status-item .woocos-status{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.woocos-status-options{
+    max-height:0;
+    transition:0.3s ease-in-out;
+    overflow:hidden;
+}
+.woocos-status-options.expanded{
+    max-height:10000px;
+}
+.woocos-status-item .woocos-status .woocos-expand-status, .woocos-status-item .woocos-status .remove-woocos-item{
+}
+.woocos-status-item .woocos-status .woocos-expand-status:hover{
+    cursor:pointer;
+}
+.woocos-status-item .woocos-status .remove-woocos-item{
+    margin-left:12px;
+}
+.woocos-status-item .woocos-status .remove-woocos-item:hover{
+    cursor:pointer;
+}
+
+.woocos-status-item .woocos-status-options .woocos-update-item{
+}
+.woocos-status-item .woocos-status-options .woocos-update-item.disabled{
+    pointer-events:none;
+    filter:grayscale(0.5);
+}
+.woocos-status-item .woocos-status-options .woocos-update-item:hover{
+    cursor:pointer;
+}
+.woocos-status-item .woocos-status-options .woocos-title-input, #new-woocos-title{
+    max-width:320px;
+    width:100%;
+}
