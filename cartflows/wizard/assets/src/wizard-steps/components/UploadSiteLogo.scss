@@ -1,0 +1,91 @@
+.wcf-media-upload-wrapper {
+	.wcf-media-upload-button {
+		border: 1px dashed #6b7280;
+		display: flex;
+		width: 100%;
+		font-size: 14px;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		grid-gap: 12px;
+		padding: 32px 10px;
+		margin: 20px 0;
+	}
+
+	.wcf-media-upload--selected-image {
+		font-weight: 500;
+
+		img {
+			margin: 0 auto;
+			max-width: 100%;
+			width: 50%;
+			vertical-align: middle;
+			height: 100%;
+		}
+
+		.wcf-media-upload--preview {
+			position: relative;
+			margin-top: 20px;
+			display: flex;
+			margin-bottom: 2em;
+			width: 100%;
+			text-align: center;
+			cursor: pointer;
+			min-height: 150px;
+			border: 1px dashed #2563eb;
+			border-radius: 2px;
+			padding: 20px;
+			align-items: center;
+
+			&:hover .wcf-change-logo-action--wrap {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+
+		.wcf-close-site-logo {
+			cursor: pointer;
+			position: absolute;
+			top: -10px;
+			right: -10px;
+			background: #fff;
+			box-shadow: 2px 0 4px rgb( 0 0 0 / 15% );
+			border-radius: 50%;
+			height: 20px;
+			width: 20px;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			z-index: 1;
+		}
+
+		.wcf-change-logo-action--wrap {
+			position: absolute;
+			bottom: 1px;
+			width: 100%;
+			padding: 10px 0;
+			text-align: center;
+			left: 0;
+			border-top: 1px dashed #2563eb;
+			background: #fff;
+			opacity: 0;
+			visibility: hidden;
+			transition: 0.3s all ease-in-out;
+		}
+	}
+
+	.wcf-media-upload--heading {
+		font-size: 15px;
+		font-weight: 500;
+		margin: 0;
+		color: #1f2937;
+		line-height: 24px;
+	}
+
+	.wcf-media-upload--no-image {
+		padding: 15px;
+		background: #e5e7eb;
+		border-radius: 4px;
+	}
+}

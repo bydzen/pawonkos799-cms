@@ -1,0 +1,148 @@
+@import url( "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" );
+
+* {
+	font-family: inter, sans-serif;
+}
+
+#wcf-confetti-wrapper {
+	pointer-events: none;
+	position: fixed;
+	z-index: 2;
+	inset: 0;
+}
+
+@tailwind base;
+@tailwind components;
+
+.wcf-container {
+	@apply max-w-7xl mx-auto  p-4;
+
+	.wcf-row {
+		@apply mx-auto max-w-md;
+	}
+
+	.wcf-pb-list-wrapper {
+		@apply flex justify-center;
+
+		.wcf-pb-list--option {
+			@apply relative mx-4 border rounded shadow-sm flex cursor-pointer h-[9rem] w-[130px] transition-all duration-300;
+
+			&:focus {
+				outline: none;
+			}
+			&:hover {
+				@apply drop-shadow-lg;
+			}
+		}
+	}
+
+	.wcf-input {
+		@apply p-3 shadow-sm block w-full text-sm border-gray-300 rounded placeholder-[#ADB2BD];
+
+		&:focus {
+			@apply ring-indigo-500 border-indigo-500;
+		}
+	}
+}
+
+.wcf-import-error-wrapper {
+	@apply flex flex-col bg-red-100 mb-5 py-5 px-5 rounded;
+
+	h3 {
+		@apply font-semibold text-red-700 text-base mb-2.5;
+	}
+	span {
+		@apply text-sm text-[#333];
+	}
+
+	a {
+		@apply inline-block py-1.5 px-2.5 text-xs text-white bg-red-500 mt-1 rounded mt-2.5;
+
+		&:hover {
+			@apply text-white bg-red-600;
+		}
+	}
+}
+.wcf-wizard--button {
+	@apply block rounded border border-transparent px-5 py-2.5 bg-[#f06434] cursor-pointer text-[15px] justify-center text-center font-medium text-white shadow flex-shrink-0 flex items-center;
+
+	&:hover {
+		@apply bg-[#ee4710];
+	}
+	&:focus {
+		@apply outline-none ring-2 ring-white ring-offset-2 ring-offset-orange-400;
+	}
+	&.is-loading {
+		background-size: 100px 100%;
+		background-image: linear-gradient( -45deg, #ea580c 33%, #c2410c 33%, #c2410c 70%, #ea580c 70% );
+		border-color: #ea580c;
+		animation: scrolling-bar-animation 2500ms infinite linear;
+
+		@keyframes scrolling-bar-animation {
+			0% {
+				background-position: 200px 0;
+			}
+		}
+	}
+}
+
+.wcf-step-heading {
+	@apply text-center overflow-hidden text-3xl font-semibold text-[#1F2937];
+}
+
+.wcf-sidebar--header {
+	@apply px-6 py-3 mb-5 bg-white flex justify-between items-center border-b border-gray-600 border-b border-solid border-[#D1D5DB];
+}
+
+.wcf-options--separator {
+	@apply border-b border-solid border-[#D1D5DB] my-2.5;
+}
+
+.wcf-options--row {
+	@apply py-4 px-6 w-full;
+
+	.wcf-options--heading {
+		@apply text-xl mb-2.5 font-medium text-[#1f2937];
+	}
+
+	.wcf-options--description {
+		@apply text-[#4B5563];
+	}
+}
+
+@screen sm {
+	.wcf-container {
+		@apply p-4;
+
+		.wcf-row {
+			@apply max-w-3xl max-w-4xl;
+		}
+
+		.wcf-pb-list-wrapper {
+			@apply flex;
+		}
+	}
+
+	.wcf-wizard--button {
+		@apply px-8;
+	}
+}
+
+@screen lg {
+	.wcf-row {
+		@apply max-w-4xl;
+	}
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+}
+::-webkit-scrollbar-thumb {
+	background: #d5d6d7;
+	border-radius: 0;
+}
+::-webkit-scrollbar-track {
+	border-radius: 0;
+}
+
+@tailwind utilities;

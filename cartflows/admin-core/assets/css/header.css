@@ -1,0 +1,61 @@
+#wcf-menu-page {
+	/*padding-top: 65px;*/
+}
+
+/* Header */
+.wcf-menu-page-header {
+	position: fixed;
+	width: calc( 100% - 160px );
+	left: 160px;
+	top: 32px;
+	z-index: 2;
+	background-color: #fff;
+	text-align: center;
+	margin-bottom: 20px;
+	box-shadow: 0 1px 1px 0 rgb( 0 0 0 / 10% );
+}
+.wcf-title {
+	flex: auto;
+	align-content: flex-start;
+	text-align: left;
+	max-width: 140px;
+	display: flex;
+	align-items: center;
+	padding: 2px 10px 2px 0;
+}
+.wcf-logo {
+	max-width: 170px;
+}
+.wcf-top-links {
+	flex: auto;
+	text-align: right;
+	font-weight: 500;
+	margin-right: -20px;
+}
+
+.wcf-top-links a {
+	text-decoration: none;
+	padding: 20px 22px;
+	color: #7d7d7d;
+	display: inline-block;
+	height: 66px;
+	border-left: 1px solid #ddd;
+}
+.wcf-top-links a:hover {
+	color: #444;
+	background: #fdfdfd;
+	border-bottom: 2px solid #ddd;
+	transition: unset;
+}
+.wcf-container {
+	/* max-width: 930px; */
+	margin: 0 auto;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+@media only screen and ( max-width: 1200px ) {
+	.wcf-top-links a {
+		padding: 20px 18px;
+	}
+}
