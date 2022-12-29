@@ -45,11 +45,11 @@ while true; do
     read -p "Move all to public directory? (y/n): " yn
     case $yn in
     [Yy]*)
-        mv pawonkos799.* pawonkos799/other/backup/
+        mv backup-pawonkos799.* pawonkos799/other/backup/
         echo "File moved to pawonkos799/other/backup/---"
         ;;
     [Nn]*)
-        printf "\File not move. Done.\n"
+        printf "File not move. Done.\n"
         exit
         ;;
     *) printf "Please answer 'Y/y' or 'N/n'.\n" ;;
