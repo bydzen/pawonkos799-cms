@@ -4,9 +4,9 @@ echo "Working..."
 sleep 3
 
 # Change user as root!
-if [ "$EUID" -ne 0 ]
-  then echo "Please run as root"
-  exit
+if ! [ $(id -u) = 0 ]; then
+    printf "Please run as root!\n"
+    exit 1
 fi
 
 echo "Exporting database..."
